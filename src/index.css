@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll Animation Styles */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-on-scroll[data-animation="fade-up"] {
+  transform: translateY(30px);
+}
+
+.animate-on-scroll[data-animation="fade-left"] {
+  transform: translateX(-30px);
+}
+
+.animate-on-scroll[data-animation="fade-right"] {
+  transform: translateX(30px);
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+
+.certificate-card {
+  transition: transform 0.3s ease;
+}
+.certificate-card:hover {
+  transform: scale(1.05);
+}
