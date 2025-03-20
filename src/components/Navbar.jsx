@@ -82,11 +82,12 @@ function Navbar() {
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center space-x-2">
             <a href="#home" onClick={(e) => handleNavClick(e, '#home')}>
-              <img
-                src="/img/Logo.jpg"
-                alt="VoidStack Logo"
-                className="h-10 w-10 rounded-full object-cover"
-              />
+            <img
+  src={`${process.env.PUBLIC_URL}/img/Logo.jpg`}
+  alt="VoidStack Logo"
+  className="h-10 w-10 rounded-full object-cover"
+/>
+
             </a>
             <div className="text-2xl font-bold text-gray-800">VoidStack</div>
           </div>

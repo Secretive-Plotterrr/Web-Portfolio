@@ -8,7 +8,8 @@ function Hero() {
       <div className="text-center px-4">
         {/* Profile Picture */}
         <div className="w-64 h-64 md:w-80 md:h-80 rounded-full mx-auto mb-6 overflow-hidden">
-          <img src="/img/pfp.jpg" alt="Rico Villamin" className="w-full h-full object-cover" />
+          {/* Modify the image path here */}
+          <img src={`${process.env.PUBLIC_URL}/img/pfp.jpg`} alt="Rico Villamin" className="w-full h-full object-cover" />
         </div>
         <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-on-scroll" data-animation="fade-up">
           Rico Villamin

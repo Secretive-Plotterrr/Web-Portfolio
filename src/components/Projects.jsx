@@ -1,4 +1,3 @@
-// components/Projects.jsx
 import React from 'react';
 
 function Projects() {
@@ -6,26 +5,25 @@ function Projects() {
     {
       title: 'Project 1',
       description: 'A modern e-commerce platform built with React and Node.js.',
-      image: '/img/ai.jpg', // Adjust path as needed
+      image: `${process.env.PUBLIC_URL}/img/ai.jpg`, // Corrected backticks for template literal
       demoLink: 'https://github.com/Secretive-Plotterrr?tab=projects', // Replace with actual GitHub link
     },
     {
       title: 'Project 2',
       description: 'Real-time chat application using Socket.io and Express.',
-      image: '/img/project2.jpg', // Adjust path as needed
+      image: `${process.env.PUBLIC_URL}/img/project2.jpg`, // Corrected backticks for template literal
       demoLink: 'https://github.com/Secretive-Plotterrr?tab=projects', // Replace with actual GitHub link
     },
-
     {
       title: 'Project 3',
       description: 'A modern e-commerce platform built with React and Node.js.',
-      image: '/img/project3.jpg', // Adjust path as needed
+      image: `${process.env.PUBLIC_URL}/img/project3.jpg`, // Corrected backticks for template literal
       demoLink: 'https://github.com/Secretive-Plotterrr?tab=projects', // Replace with actual GitHub link
     },
     {
       title: 'Project 4',
       description: 'Real-time chat application using Socket.io and Express.',
-      image: '/img/project4.jpg', // Adjust path as needed
+      image: `${process.env.PUBLIC_URL}/img/project4.jpg`, // Corrected backticks for template literal
       demoLink: 'https://github.com/Secretive-Plotterrr?tab=projects', // Replace with actual GitHub link
     },
   ];
