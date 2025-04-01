@@ -5,13 +5,6 @@ function Certificates() {
   const certificates = [
     { id: 1, title: 'Certificate 1', image: `${process.env.PUBLIC_URL}/img/certificates/certificate.1.jpg` },
     { id: 2, title: 'Certificate 2', image: `${process.env.PUBLIC_URL}/img/certificates/certificate.2.jpg` },
-    { id: 3, title: 'Certificate 3', image: `${process.env.PUBLIC_URL}/img/certificates/certificate3.jpg` },
-    { id: 4, title: 'Certificate 4', image: `${process.env.PUBLIC_URL}/img/certificates/certificate4.jpg` },
-    { id: 5, title: 'Certificate 5', image: `${process.env.PUBLIC_URL}/img/certificates/certificate5.jpg` },
-    { id: 6, title: 'Certificate 6', image: `${process.env.PUBLIC_URL}/img/certificates/certificate6.jpg` },
-    { id: 7, title: 'Certificate 7', image: `${process.env.PUBLIC_URL}/img/certificates/certificate7.jpg` },
-    { id: 8, title: 'Certificate 8', image: `${process.env.PUBLIC_URL}/img/certificates/certificate8.jpg` },
-    { id: 9, title: 'Certificate 9', image: `${process.env.PUBLIC_URL}/img/certificates/certificate9.jpg` },
     // Add more certificates as needed
   ];
 

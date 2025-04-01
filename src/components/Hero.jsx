@@ -1,21 +1,56 @@
-// components/Hero.jsx
-import React from 'react';
-import { FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa'; // Import icons
+import React, { useState, useEffect } from 'react';
+import { FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
 
 function Hero() {
+  const [typedText, setTypedText] = useState('');
+  const fullText = 'Web Developer';
+  const typingSpeed = 100; // Speed of typing (ms per character)
+  const pauseDuration = 2000; // Pause before reset (ms)
+
+  useEffect(() => {
+    let currentIndex = 0;
+    let isTyping = true;
+
+    const typeAndReset = () => {
+      if (isTyping) {
+        // Typing phase
+        if (currentIndex <= fullText.length) {
+          setTypedText(fullText.slice(0, currentIndex));
+          currentIndex++;
+          setTimeout(typeAndReset, typingSpeed);
+        } else {
+          // Pause after typing
+          isTyping = false;
+          setTimeout(typeAndReset, pauseDuration);
+        }
+      } else {
+        // Reset phase
+        currentIndex = 0;
+        setTypedText('');
+        isTyping = true;
+        setTimeout(typeAndReset, 500); // Small delay before restarting
+      }
+    };
+
+    typeAndReset();
+
+    // Cleanup to prevent multiple intervals
+    return () => clearTimeout();
+  }, [fullText]); // Dependency array ensures effect runs if fullText changes
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 bg-gray-100 text-gray-800">
       <div className="text-center px-4">
         {/* Profile Picture */}
         <div className="w-64 h-64 md:w-80 md:h-80 rounded-full mx-auto mb-6 overflow-hidden">
-          {/* Modify the image path here */}
           <img src={`${process.env.PUBLIC_URL}/img/pfp.jpg`} alt="Rico Villamin" className="w-full h-full object-cover" />
         </div>
         <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-on-scroll" data-animation="fade-up">
           Rico Villamin
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 mb-4 animate-on-scroll" data-animation="fade-up" data-delay="0.2s">
-          Web Developer
+          {typedText}
+          <span className="animate-blink">|</span> {/* Cursor effect */}
         </p>
         <p className="text-lg text-gray-600 mb-8 animate-on-scroll" data-animation="fade-up" data-delay="0.3s">
           Hello! Welcome to my portfolio. I’m excited to share my work with you!

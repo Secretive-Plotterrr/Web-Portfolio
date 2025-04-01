@@ -83,13 +83,13 @@ function Navbar() {
           <div className="flex items-center space-x-2">
             <a href="#home" onClick={(e) => handleNavClick(e, '#home')}>
             <img
-  src={`${process.env.PUBLIC_URL}/img/Logo.jpg`}
+  src={`${process.env.PUBLIC_URL}/img/Logo.png`}
   alt="VoidStack Logo"
   className="h-10 w-10 rounded-full object-cover"
 />
 
             </a>
-            <div className="text-2xl font-bold text-gray-800">VoidStack</div>
+            <div className="text-2xl font-bold text-gray-800">CodeKnight</div>
           </div>
 
           {/* Desktop Navigation */}

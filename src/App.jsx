@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import useScrollAnimation from './useScrollAnimation';
 
+
 function App() {
   useScrollAnimation(); // Enable scroll animations
 

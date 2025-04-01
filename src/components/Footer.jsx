@@ -7,7 +7,7 @@ function Footer() {
     <footer className="bg-gray-400 py-6 text-gray-800">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <p className="text-gray-600">
-          © {new Date().getFullYear()} VoidStack. All rights reserved.
+          © {new Date().getFullYear()} CodeKnight. All rights reserved.
         </p>
         <div className="mt-4 flex justify-center space-x-6">
           <a

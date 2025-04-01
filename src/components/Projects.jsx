@@ -4,27 +4,33 @@ function Projects() {
   const projects = [
     {
       title: 'Project 1',
-      description: 'A modern e-commerce platform built with React and Node.js.',
-      image: `${process.env.PUBLIC_URL}/img/ai.jpg`, // Corrected backticks for template literal
-      demoLink: 'https://github.com/Secretive-Plotterrr?tab=projects', // Replace with actual GitHub link
+      description: 'A Tic-Tac_Toe game using React and Tailwind CSS.',
+      image: `${process.env.PUBLIC_URL}/img/project1.png`, // Corrected backticks for template literal
+      demoLink: 'https://tic-tac-toe-one-sandy.vercel.app', // Replace with actual GitHub link
     },
     {
       title: 'Project 2',
-      description: 'Real-time chat application using Socket.io and Express.',
-      image: `${process.env.PUBLIC_URL}/img/project2.jpg`, // Corrected backticks for template literal
-      demoLink: 'https://github.com/Secretive-Plotterrr?tab=projects', // Replace with actual GitHub link
+      description: 'Responsive Web Portfolio built with HTML, CSS, JavaScript , and Python(FLASK).',
+      image: `${process.env.PUBLIC_URL}/img/project2.png`, // Corrected backticks for template literal
+      demoLink: 'https://secretive-plotterrr.github.io/Python-Web-Portfolio/', // Replace with actual GitHub link
     },
     {
       title: 'Project 3',
-      description: 'A modern e-commerce platform built with React and Node.js.',
-      image: `${process.env.PUBLIC_URL}/img/project3.jpg`, // Corrected backticks for template literal
-      demoLink: 'https://github.com/Secretive-Plotterrr?tab=projects', // Replace with actual GitHub link
+      description: 'Chat bot built with React.',
+      image: `${process.env.PUBLIC_URL}/img/project3.png`, // Corrected backticks for template literal
+      demoLink: 'https://my-chatbot-dusky.vercel.app', // Replace with actual GitHub link
     },
     {
       title: 'Project 4',
-      description: 'Real-time chat application using Socket.io and Express.',
-      image: `${process.env.PUBLIC_URL}/img/project4.jpg`, // Corrected backticks for template literal
-      demoLink: 'https://github.com/Secretive-Plotterrr?tab=projects', // Replace with actual GitHub link
+      description: 'Chess Game built with React.',
+      image: `${process.env.PUBLIC_URL}/img/project4.png`, // Corrected backticks for template literal
+      demoLink: 'https://secretive-plotterrr.github.io/Chess/', // Replace with actual GitHub link
+    },
+    {
+      title: 'Project 5',
+      description: 'Typing Speed Test built with React.',
+      image: `${process.env.PUBLIC_URL}/img/project5.png`, // Corrected backticks for template literal
+      demoLink: 'https://secretive-plotterrr.github.io/Typing-Test-App/', // Replace with actual GitHub link
     },
   ];
 
