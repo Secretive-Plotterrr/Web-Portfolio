@@ -32,6 +32,12 @@ function Projects() {
       image: `${process.env.PUBLIC_URL}/img/project5.png`, // Corrected backticks for template literal
       demoLink: 'https://secretive-plotterrr.github.io/Typing-Test-App/', // Replace with actual GitHub link
     },
+    {
+      title: 'Project 6',
+      description: 'Typing Speed Test built with React.',
+      image: `${process.env.PUBLIC_URL}/img/project6.png`, // Corrected backticks for template literal
+      demoLink: 'https://secretive-plotterrr.github.io/To-do-List/', // Replace with actual GitHub link
+    },
   ];
 
   return (
