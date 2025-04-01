@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Secretive-Plotterrr.github.io/Web-Portfolio",
+  "homepage": "https://secretive-plotterrr.github.io/Web-Portfolio/",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/postcss": "^4.0.14",
