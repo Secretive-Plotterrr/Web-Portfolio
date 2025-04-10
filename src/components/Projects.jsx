@@ -34,7 +34,7 @@ function Projects() {
     },
     {
       title: 'Project 6',
-      description: 'Typing Speed Test built with React.',
+      description: 'To-do List built with React.',
       image: `${process.env.PUBLIC_URL}/img/project6.png`, // Corrected backticks for template literal
       demoLink: 'https://secretive-plotterrr.github.io/To-do-List/', // Replace with actual GitHub link
     },
