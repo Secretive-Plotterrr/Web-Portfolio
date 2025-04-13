@@ -5,6 +5,8 @@ function Certificates() {
   const certificates = [
     { id: 1, title: 'Certificate 1', image: `${process.env.PUBLIC_URL}/img/certificates/certificate.1.jpg` },
     { id: 2, title: 'Certificate 2', image: `${process.env.PUBLIC_URL}/img/certificates/certificate.2.jpg` },
+    { id: 1, title: 'Certificate 3', image: `${process.env.PUBLIC_URL}/img/certificates/certificate.3.jpg` },
+    { id: 2, title: 'Certificate 4', image: `${process.env.PUBLIC_URL}/img/certificates/certificate.4.jpg` },
     // Add more certificates as needed
   ];
 
