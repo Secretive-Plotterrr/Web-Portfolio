@@ -56,7 +56,7 @@ function Hero() {
           Hello! Welcome to my portfolio. I’m excited to share my work with you!
         </p>
         <a
-          href="/files/CV.pdf"
+          href={`${process.env.PUBLIC_URL}/files/CV.pdf`}
           download="Rico_Villamin_Resume.pdf"
           className="bg-gray-700 text-white hover:bg-gray-800 px-6 py-3 rounded-full text-lg transition-all duration-300 animate-on-scroll inline-block"
           data-animation="fade-up"

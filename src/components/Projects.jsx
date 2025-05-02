@@ -32,6 +32,18 @@ function Projects() {
       image: `${process.env.PUBLIC_URL}/img/project5.png`, // Corrected backticks for template literal
       demoLink: 'https://secretive-plotterrr.github.io/Typing-Test-App/', // Replace with actual GitHub link
     },
+    {
+      title: 'Project 6',
+      description: 'To-do List built with React.',
+      image: `${process.env.PUBLIC_URL}/img/project6.png`, // Corrected backticks for template literal
+      demoLink: 'https://secretive-plotterrr.github.io/To-do-List/', // Replace with actual GitHub link
+    },
+    {
+      title: 'Project 7',
+      description: 'Web Snake Game built with React.',
+      image: `${process.env.PUBLIC_URL}/img/project7.png`, // Corrected backticks for template literal
+      demoLink: 'https://secretive-plotterrr.github.io/Snake-Game/', // Replace with actual GitHub link
+    },
   ];
 
   return (
